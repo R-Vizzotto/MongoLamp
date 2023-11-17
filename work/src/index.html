@@ -1,24 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h3>C.R.U.D.</h3>
 
-<body>
+        <h3>Create</h3>
+        <p>
+            <form method='post' action='insertnewuser.php'>
+                Name: <input type='text' name='name'><br>
+                Age: <input type='text' name='age'><br>
+                <input type='submit' name='Enter' value='Submit'>
+            </form>
+        </p>
 
-<h3>Enter a new user</h3>
+        <h3>Read</h3>
+        <p>
+            <form method='post' action='readuser.php'>
+                Name: <input type='text' name='name'><br>
+                <input type='submit' name='Enter' value='Submit'>
+            </form>
+        </p>
 
+        <h3>Update</h3>
+        <p>
+            <form method='post' action='updateuser.php'>
+                Name: <input type='text' name='name'><br>
+                Age: <input type='text' name='new_age'><br>
+                <input type='submit' name='Enter' value='Submit'>
+            </form>
+        </p>
 
-<h3>PHP test attempt</h3>
-<p>
-
-<form method='post' action='insertnewuser.php'>
-Name: <input type='text' name='name'><br>
-Age: <input type='text' name='age'><br>
-<input type='submit' name='Enter' value='Submit'>
-
-
-</p>
-
-</body>
-
-
-
+        <h3>Delete</h3>
+        <p>
+            <form method='post' action='deleteuser.php'>
+                Name: <input type='text' name='name'><br>
+                <input type='submit' name='Enter' value='Submit'>
+            </form>
+        </p>
+    </body>
 </html>
